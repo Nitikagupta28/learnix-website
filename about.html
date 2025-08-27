@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo1.png" alt=""></a>
+            <div class="nav-links">
+                <i class="fas fa-times menu-icon" onclick="hideMenu()" style="position:absolute; top:20px; right:20px;"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars menu-icon" onclick="showMenu()"></i>
+        </nav>
+        <h1>About Us</h1>
+    </section>
+
+    <!------------------Java script--------------------------------->
+
+    <script>
+        var navLinks=document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+
+    </script>
+
+    <!--------ABOUT US CONTENT---------->
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>Shaping Tomorrow's Leaders, Today</h1>
+                <p>At Learnix University, we believe in empowering students with the knowledge, innovation, and global perspective needed to thrive in a changing world. With world-class faculty, a diverse campus, and cutting-edge programs, we prepare you to become future-ready, confident, and impactful leaders.</p>
+<a href="course.html" class="btn">Explore Courses</a>
+            </div>
+            <div class="about-col">
+                <img src="images/about.jpg" alt="About Learnix University">
+            </div>
+        </div>
+    </section>
+
+    <!----------FOOTER--------->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Learnix University is a forward-thinking institution committed to academic excellence and innovation. We aim to nurture global leaders with knowledge, values, and purpose.</p>
+        <div class="icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin"></i>
+            
+
+        </div>
+        <p>Made with <i class="fas fa-heart"></i>by Nitika Gupta </p>
+
+    </section>
+
+
+
+    
+</body>
+</html>

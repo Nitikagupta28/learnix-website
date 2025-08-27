@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo1.png" alt=""></a>
+            <div class="nav-links">
+                <i class="fas fa-times menu-icon" onclick="hideMenu()" style="position:absolute; top:20px; right:20px;"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars menu-icon" onclick="showMenu()"></i>
+        </nav>
+        <h1>Our Courses</h1>
+    </section>
+
+    <!------------------Java script--------------------------------->
+
+    <script>
+        var navLinks=document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+
+    </script>
+
+    <!--------COURSES---------->
+    <section class="course">
+        <h1>Courses We Offer</h1>
+        <p> Our academic approach combines industry mentorship, global exposure,<br> certifications, research opportunities, and capstone
+        projects to <br> provide experiential learning and a well-rounded education.</p>
+        <div class="row">
+            <div class="course-col">
+                <h3>Intermediate</h3>
+                <p>Our intermediate courses are designed to bridge the gap between high school and advanced study. Programs include foundational training in science, commerce, and the arts — helping students make informed career decisions and prepare for competitive exams.</p>
+            </div>
+            <div class="course-col">
+                <h3>Degree</h3>
+                <p>We offer a wide range of undergraduate degrees in fields like Computer Science, Business Administration, Mass Communication, and more. Our degree programs combine theoretical knowledge with real-world application, supported by internships, projects, and expert faculty.</p>
+            </div>
+            <div class="course-col">
+                <h3>Post Graduation</h3>
+                <p>Our postgraduate programs are tailored for specialization and research. With courses like MBA, M.Tech, M.Sc., and MA, students can deepen their knowledge and enhance their career prospects through advanced curriculum and industry collaboration.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!---------FACILITIES---------->
+    <section class="facilities">
+        <h1>Our Facilities</h1>
+        <p>We believe a great education goes beyond the classroom. Our campus is equipped with world-class facilities to support your academic and personal growth.</p>
+        <div class="row">
+            <div class="facilities-col">
+                <img src="/images/library.png" >
+                <h3>World Class Library</h3>
+                <p>Our modern library offers a vast collection of physical and digital resources, including textbooks, research journals, and access to international databases — open to students 24/7.</p>
+            </div>
+            <div class="facilities-col">
+                <img src="/images/basketball.png" >
+                <h3>Largest Playground</h3>
+                <p>Physical fitness is key to success. Our sports facilities include basketball courts, football fields, gymnasiums, and space for athletics — encouraging students to stay active and healthy.</p>
+            </div>
+            <div class="facilities-col">
+                <img src="/images/cafeteria.png" >
+                <h3>Tasty And Healthy Food</h3>
+                <p>Our on-campus cafeteria serves nutritious, hygienic, and delicious food — catering to all dietary preferences, with meals that keep students energized throughout the day.</p>
+            </div>
+        </div>
+
+    </section>
+   
+
+    <!----------FOOTER--------->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Learnix University is a forward-thinking institution committed to academic excellence and innovation. We aim to nurture global leaders with knowledge, values, and purpose.</p>
+        <div class="icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin"></i>
+            
+
+        </div>
+        <p>Made with <i class="fas fa-heart"></i>by Nitika Gupta </p>
+
+    </section>
+
+
+
+    
+</body>
+</html>

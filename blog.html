@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo1.png" alt=""></a>
+            <div class="nav-links">
+                <i class="fas fa-times menu-icon" onclick="hideMenu()" style="position:absolute; top:20px; right:20px;"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars menu-icon" onclick="showMenu()"></i>
+        </nav>
+        <h1>Our Certificates & Online Programs For 2025</h1>
+    </section>
+
+    <!------------------Java script--------------------------------->
+
+    <script>
+        var navLinks=document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+
+    </script>
+    
+    <!----------BLOG PAGE CONTENT--------------------->
+    <section class="blog-content">
+        <div class="row">
+            <div class="blog-left">
+                <img src="/images/certificate.jpg" alt="Certificate Image" >
+                <h2>Our Certificates & Online Programs For 2025</h2>
+                <p>In a rapidly evolving digital world, staying ahead means staying updated. At Learnix University, we are proud to introduce a comprehensive range of online certification programs for 2025 that are flexible, industry-relevant, and globally recognized.</p>
+                <br>
+                <p>Whether you're a student looking to upskill or a working professional aiming to pivot your career, our online programs are designed to fit seamlessly into your schedule. With expert instructors, real-world projects, and 24/7 access to study material, learning with us is not just convenient — it’s transformative.</p>
+                <br>
+                <p>All our programs are certified by leading accreditation bodies and endorsed by industry leaders, giving you the confidence that your qualification will be respected and recognized worldwide.</p>
+                <br>
+                <p>Enrollments are open year-round with flexible payment options, student support, and placement assistance. Plus, you’ll earn a professional certificate that you can share on LinkedIn, your resume, or with employers directly.</p>
+                <br>
+
+<p>At Learnix University, we believe education should empower you to thrive — not just today, but for years to come. Join thousands of learners who are upgrading their futures, one course at a time.</p>
+
+<br>
+
+<p>Ready to take the next step? <strong>Apply now</strong> and become part of a global learning community that’s shaping the leaders of tomorrow.</p>
+                <div class="comment-box">
+                    <h3>Leave a comment</h3>
+                    <form class="comment-form">
+                        <input type="text" placeholder="Enter Name">
+                        <input type="email" placeholder="Enter Email">
+                        <textarea rows="5" placeholder="Your Comment"></textarea>
+                        <button type="submit" class="btn">Post Comment</button>
+
+                    </form>
+                </div>
+            </div>
+            <div class="blog-right">
+                <h3>Post Categories</h3>
+                <div>
+                    <span>Business Analytics</span>
+                    <span>21</span>
+                </div>
+                <div>
+                    <span>Data Science</span>
+                    <span>28</span>
+                </div>
+                <div>
+                    <span>Machine Learning</span>
+                    <span>15</span>
+                </div>
+                <div>
+                    <span>Journalism</span>
+                    <span>22</span>
+                </div>
+                <div>
+                    <span>Commerce</span>
+                    <span>30</span>
+                </div>
+                <div>
+                    <span>Computer Science</span>
+                    <span>34</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!----------FOOTER--------->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Learnix University is a forward-thinking institution committed to academic excellence and innovation. We aim to nurture global leaders with knowledge, values, and purpose.</p>
+        <div class="icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin"></i>
+            
+
+        </div>
+        <p>Made with <i class="fas fa-heart"></i>by Nitika Gupta </p>
+
+    </section>
+
+
+
+    
+</body>
+</html>
